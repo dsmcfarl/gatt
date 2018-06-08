@@ -53,6 +53,8 @@ type Device interface {
 	// StopAdvertising stops advertising.
 	StopAdvertising() error
 
+	Stop() error
+
 	// RemoveAllServices removes all services that are currently in the database.
 	RemoveAllServices() error
 
